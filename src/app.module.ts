@@ -12,9 +12,16 @@ import { QrModule } from './qr/qr.module';
 
 import { EventService } from './event/event.service';
 import { EventModule } from './event/event.module';
+import { ThrottlerModule } from '@nestjs/throttler';
 
 @Module({
   imports: [
+    ThrottlerModule.forRoot([
+      {
+        ttl: 60000,
+        limit: 10,
+      },
+    ]),
     ConfigModule.forRoot(),
     AuthModule,
     UserModule,
