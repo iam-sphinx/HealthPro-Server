@@ -26,6 +26,14 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Swagger API Documentation
+
+You can view the API documentation using Swagger at the following link:
+
+[Swagger API Docs](https://healthpro-server.onrender.com/docs)
+
+
+
 ## Project setup
 
 ```bash
